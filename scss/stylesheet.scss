@@ -1,0 +1,320 @@
+/* ----- STYLESHEET ----- */
+
+
+/* IMPORTS */
+
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "buttons";
+
+
+/* HERO IMAGE SECTION */
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: $footer;
+  position: fixed;
+  z-index: 10;
+}
+
+  .banner {
+    max-width: 1100px;
+
+    img {padding-right: 15px;}
+
+  p {
+    color: #cdcdcd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 50px;
+    }
+
+  }
+
+  #bar-main {
+      background: url('../images/masthead.jpg') no-repeat;
+      background-size: cover;
+      clear:           both;
+      height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+
+.bar {
+    height:            140px;
+    width:             100%;
+    padding-top:       68px;
+    vertical-align:  middle;
+    background-color: white;
+}
+
+.logo {
+    height:           90px;
+    max-width:       600px;
+    margin-top:      -18px;
+    margin-left:      auto;
+    margin-right:     auto;
+    display:  inline-table;
+    text-align:     center;
+    vertical-align: middle;
+}
+
+.logo h1 {
+    display:    table-cell; // display: none or table cell; to toggle logo
+    vertical-align: middle;
+}
+
+.logo-img {
+    height:   100%;
+    padding:   2px;
+    display: none; // display: block or none; to toggle logo
+}
+
+.tel {
+    float: right;
+    padding: 16px 0;
+
+    span {
+        font-size:   18px;
+        font-weight:  300;
+        line-height: 18px;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+
+.hero-content {
+    margin-left:     auto;
+    margin-right:    auto;
+    text-align:    center;
+    margin-top: -30px;
+    max-width: 900px;
+    align-self: center;
+}
+
+
+.call {
+    width:      150px;
+    height:      68px;
+    padding: 13px 5px;
+    font-size:   18px;
+}
+
+.call-text {
+    color:        black;
+    height:        40px;
+    width:        200px;
+    font-size:     18px;
+    margin-top:   -70px;
+    padding: 0 0 0 60px;
+}
+
+
+/* HOW IT WORKS SECTION */
+
+.how-color {background-color: white;}
+
+.how-it-works {
+    margin-left:    auto;
+    margin-right:   auto;
+    height:         auto;
+    padding: 50px 0 90px;
+
+    hr {
+        width:              34px;
+        height:              4px;
+        margin-top:            0;
+        border:           0 none;
+        margin-left:        auto;
+        margin-right:       auto;
+        color:            $brand;
+        background-color: $brand;
+    }
+}
+
+.flex-parent {
+    padding:         0;
+    width:        100%;
+    margin-left:  auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.flex-child {
+    display:  inline-block;
+    text-align:       left;
+    width:           248px;
+    height:           auto;
+    border-radius:     4px;
+    padding: 60px 18px 5px;
+
+    h4 {text-transform: uppercase;}
+}
+
+.flex-img {
+    display: inline;
+    img {
+        width:          55px;
+        padding-bottom: 58px;
+    }
+}
+
+.flex-parent2 {
+    display:                 none;
+    justify-content: space-between;
+}
+
+.flex-child2 {
+    width:          240px;
+    height:          auto;
+    text-align:    center;
+    padding: 50px 10px 5px;
+
+    h4 {text-transform: uppercase;}
+
+    img {width: 60px;}
+}
+
+
+/* SERVICE SECTION */
+
+.services {
+    background: url('../images/services-back.jpg') right no-repeat;
+    background-size:       contain;
+    background-color: $bg-services;
+    width:                    100%;
+    height:                   auto;
+    overflow:               hidden;
+
+    h3 {padding: 0 0 30px;}
+}
+
+.services-column {
+    background-color: $bg-services;
+    max-width:               650px;
+    height:                   auto;
+    padding:   70px 20px 70px 40px;
+
+    img {padding: 0 6px;}
+
+    .service-top-text {
+        margin-left:     40px;
+        width:          460px;
+        color: $services-text;
+        padding-bottom:  26px;
+        font-family: 'Merriweather', serif;
+    }
+
+    .rss {
+        margin: 0 0 0 -40px;
+        max-width:    600px;
+    }
+
+    .rss li {
+        background: url("../images/tick.png") 0 0 no-repeat;
+        background-size: 16px 16px;
+        vertical-align:        top;
+        list-style-type:      none;
+        padding:        0 50px 0 28px;
+    }
+}
+
+.hr-form, .hr-services {
+    width:              34px;
+    height:              4px;
+    margin-top:        -40px;
+    margin-left:           0;
+    margin-bottom:      40px;
+    border:           0 none;
+    background-color: $brand;
+    color:            $brand;
+}
+
+.hr-form {margin: -30px auto 60px;}
+
+.service-item {
+    font-size:       14px;
+    line-height:     18px;
+    font-weight:      200;
+    color: $services-text;
+    font-family: 'Merriweather', serif;
+}
+
+
+/* FORM SECTION */
+
+.form {
+    margin-left:  auto;
+    margin-right: auto;
+    min-height:  500px;
+    padding: 60px 90px;
+
+    h3 {
+        padding:  0 0 30px;
+        font-size:    32px;
+        text-align: center;
+    }
+}
+
+.form-control:focus,
+.uneditable-input:focus,
+input:focus,
+input[type]:focus,
+textarea:focus {
+    box-shadow: 0 1px 1px rgba($brand, 0.8) inset, 0 0 6px rgba($brand, 0.6);
+    border-color: $brand;
+    outline:      0 none;
+}
+
+.form-control,
+.uneditable-input,
+input,
+input[type],
+textarea {
+    -webkit-border-radius: 0;
+    -moz-border-radius:    0;
+    border-radius:         0;
+    height:             40px;
+}
+
+.flex-child-success {
+    max-width:   600px;
+    max-height:  500px;
+    margin-left:  auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 4px;
+    padding: 60px 20px;
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/img3.jpeg') top;
+    background-size: cover;
+
+    h3, small {color: white;}
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    min-height:          30px;
+    padding:           10px 0;
+    color:               #bbb;
+    background-color: $footer;
+    p {font-family: 'Montserrat', sans-serif;}
+}
+
+.actionpage {
+    min-height:          30px;
+    position:           fixed;
+    width:               100%;
+    bottom:                 0;
+    padding:           10px 0;
+    color:               #bbb;
+    background-color: $footer;
+}
+
+
+@import "media-queries";

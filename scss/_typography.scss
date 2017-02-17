@@ -1,0 +1,77 @@
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: $link;
+    font-family: 'Merriweather', serif;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    color: $brand;
+    text-decoration: none;
+}
+
+.active {
+    color: $brand;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgba(56, 58, 63, 1.0);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size:       44px;
+  color:          white;
+  font-weight:      700;
+  padding-bottom: 0.4em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    color: rgba(54, 54, 54, 1.0);
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    color: rgba(57, 57, 57, 1.0);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+    font-family: 'Merriweather', serif;
+    font-size:  28px;
+    font-weight: 200;
+    color:    white;
+}
+
+p {
+    font-size: 15px;
+    color: rgba(121, 121, 121, 1.0);
+    font-family: 'Merriweather', serif;
+}
+
+.lead {
+    font-weight: 600;
+}
+
+.text-muted {
+    padding: 16px;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 70px;
+}
